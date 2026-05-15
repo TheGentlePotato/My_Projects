@@ -30,8 +30,8 @@ The SIEM flagged an email from `onboarding@hrconnex.thm`. While external domains
     <td width="50%"><b>Splunk Verification</b></td>
   </tr>
   <tr>
-    <td><img src="Pictures/Phishing_Alert_Triage_%26_Incident_Response/Alert_8814.jpg" width="100%"></td>
-    <td><img src="Pictures/Phishing_Alert_Triage_%26_Incident_Response/Alert_8814_Splunk.jpg" width="100%"></td>
+    <td><img src="%20Pictures%20/Phishing_Alert_Triage_%26_Incident_Response/Alert_8814.jpg" width="100%"></td>
+    <td><img src="%20Pictures%20/Phishing_Alert_Triage_%26_Incident_Response/Alert_8814_Splunk.jpg" width="100%"></td>
   </tr>
 </table>
 
@@ -50,18 +50,18 @@ This case displayed a classic "Attack Chain." Alert 8815 caught the email delive
 #### Phase 1: Email Delivery (Alert 8815)
 <table width="100%">
   <tr>
-    <td><img src="Pictures/Phishing_Alert_Triage_%26_Incident_Response/Alert_8815.jpg" width="100%"></td>
-    <td><img src="Pictures/Phishing_Alert_Triage_%26_Incident_Response/Alert_8815_Splunk.jpg" width="100%"></td>
-    <td><img src="Pictures/Phishing_Alert_Triage_%26_Incident_Response/Alert_8815_VirusTotal.jpg" width="100%"></td>
+    <td><img src="%20Pictures%20/Phishing_Alert_Triage_%26_Incident_Response/Alert_8815.jpg" width="100%"></td>
+    <td><img src="%20Pictures%20/Phishing_Alert_Triage_%26_Incident_Response/Alert_8815_Splunk.jpg" width="100%"></td>
+    <td><img src="%20Pictures%20/Phishing_Alert_Triage_%26_Incident_Response/Alert_8815_VirusTotal.jpg" width="100%"></td>
   </tr>
 </table>
 
 #### Phase 2: User Interaction (Alert 8816)
 <table width="100%">
   <tr>
-    <td><img src="Pictures/Phishing_Alert_Triage_%26_Incident_Response/Alert_8816.jpg" width="100%"></td>
-    <td><img src="Pictures/Phishing_Alert_Triage_%26_Incident_Response/Alert_8816_Splunk.jpg" width="100%"></td>
-    <td><img src="Pictures/Phishing_Alert_Triage_%26_Incident_Response/Alert_8816_VirusTotal.jpg" width="100%"></td>
+    <td><img src="%20Pictures%20/Phishing_Alert_Triage_%26_Incident_Response/Alert_8816.jpg" width="100%"></td>
+    <td><img src="%20Pictures%20/Phishing_Alert_Triage_%26_Incident_Response/Alert_8816_Splunk.jpg" width="100%"></td>
+    <td><img src="%20Pictures%20/Phishing_Alert_Triage_%26_Incident_Response/Alert_8816_VirusTotal.jpg" width="100%"></td>
   </tr>
 </table>
 
@@ -75,9 +75,9 @@ The attacker utilized **Typosquatting** (`m1crosoftsupport.co`) to trick the use
 
 <table width="100%">
   <tr>
-    <td><img src="Pictures/Phishing_Alert_Triage_%26_Incident_Response/Alert_8817.jpg" width="100%"></td>
-    <td><img src="Pictures/Phishing_Alert_Triage_%26_Incident_Response/Alert_8817_Splunk.jpg" width="100%"></td>
-    <td><img src="Pictures/Phishing_Alert_Triage_%26_Incident_Response/Alert_8817_VirusTotal.jpg" width="100%"></td>
+    <td><img src="%20Pictures%20/Phishing_Alert_Triage_%26_Incident_Response/Alert_8817.jpg" width="100%"></td>
+    <td><img src="%20Pictures%20/Phishing_Alert_Triage_%26_Incident_Response/Alert_8817_Splunk.jpg" width="100%"></td>
+    <td><img src="%20Pictures%20/Phishing_Alert_Triage_%26_Incident_Response/Alert_8817_VirusTotal.jpg" width="100%"></td>
   </tr>
 </table>
 
