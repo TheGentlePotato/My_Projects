@@ -25,7 +25,7 @@ The SIEM flagged an email from `onboarding@hrconnex.thm`. While external domains
 * **Findings:** Discovered an announcement confirming **HRConnex** as a new authorized partner.
 
 ![Alert 8814 Email](TryHackMe_Soc_Lab%20/%20Pictures%20/Phishing_Alert_Triage_%26_Incident_Response/Alert_8814.jpg)
-![Alert 8814 Splunk Verification](./Pictures/Phishing_Alert_Triage_%26_Incident_Response/Alert_8814_Splunk.jpg)
+![Alert 8814 Splunk Verification](TryHackMe_Soc_Lab%20/%20Pictures%20/Phishing_Alert_Triage_%26_Incident_Response/Alert_8814.jpg)
 
 ---
 
