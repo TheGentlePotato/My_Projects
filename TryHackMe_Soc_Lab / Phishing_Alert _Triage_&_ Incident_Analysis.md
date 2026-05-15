@@ -24,8 +24,8 @@ The SIEM flagged an email from `onboarding@hrconnex.thm`. While external domains
 * **Investigation:** I queried Splunk for internal IT communications.
 * **Findings:** Discovered an announcement confirming **HRConnex** as a new authorized partner.
 
-![Alert 8814 Email](TryHackMe_Soc_Lab/images/Phishing_Triage/Alert_8814.jpg)
-![Alert 8814 Splunk Verification](TryHackMe_Soc_Lab/images/Phishing_Triage/Alert_8814_Splunk.jpg)
+![Alert 8814 Email](TryHackMe_Soc_Lab/images/Phishing_Alert_Triage_&_Incident_Response/Alert_8814.jpg)
+![Alert 8814 Splunk Verification](TryHackMe_Soc_Lab/images/Phishing_Alert_Triage_&_Incident_Response/Alert_8814_Splunk.jpg)
 
 ---
 
@@ -40,14 +40,14 @@ This case displayed a classic "Attack Chain." Alert 8815 caught the email delive
 3.  **Defense:** The corporate firewall successfully intercepted the request.
 
 #### Phase 1: Email Delivery (8815)
-![Alert 8815 Email](TryHackMe_Soc_Lab/images/Phishing_Triage/Alert_8815.jpg)
-![Alert 8815 Splunk Search](TryHackMe_Soc_Lab/images/Phishing_Triage/Alert_8815_Splunk.jpg)
-![Alert 8815 VirusTotal Check](TryHackMe_Soc_Lab/images/Phishing_Triage/Alert_8815_VirusTotal.jpg)
+![Alert 8815 Email](TryHackMe_Soc_Lab/images/Phishing_Alert_Triage_&_Incident_Response/Alert_8815.jpg)
+![Alert 8815 Splunk Search](TryHackMe_Soc_Lab/images/Phishing_Alert_Triage_&_Incident_Response/Alert_8815_Splunk.jpg)
+![Alert 8815 VirusTotal Check](TryHackMe_Soc_Lab/images/Phishing_Alert_Triage_&_Incident_Response/Alert_8815_VirusTotal.jpg)
 
 #### Phase 2: User Interaction (8816)
-![Alert 8816 Web Alert](TryHackMe_Soc_Lab/images/Phishing_Triage/Alert_8816.jpg)
-![Alert 8816 Splunk Traffic Log](TryHackMe_Soc_Lab/images/Phishing_Triage/Alert_8816_Splunk.jpg)
-![Alert 8816 VirusTotal Result](TryHackMe_Soc_Lab/images/Phishing_Triage/Alert_8816_VirusTotal.jpg)
+![Alert 8816 Web Alert](TryHackMe_Soc_Lab/images/Phishing_Alert_Triage_&_Incident_Response/Alert_8816.jpg)
+![Alert 8816 Splunk Traffic Log](TryHackMe_Soc_Lab/images/Phishing_Alert_Triage_&_Incident_Response/Alert_8816_Splunk.jpg)
+![Alert 8816 VirusTotal Result](TryHackMe_Soc_Lab/images/Phishing_Alert_Triage_&_Incident_Response/Alert_8816_VirusTotal.jpg)
 
 ---
 
@@ -59,9 +59,9 @@ This was a high-severity incident. The attacker utilized **Typosquatting** (`m1c
 
 * **The Gap:** Unlike the previous cases, the firewall action was **"ALLOWED."** * **Impact:** The user reached the malicious destination, indicating a high probability of credential theft.
 
-![Alert 8817 Email Lure](TryHackMe_Soc_Lab/images/Phishing_Triage/Alert_8817.jpg)
-![Alert 8817 Splunk Allowed Traffic](TryHackMe_Soc_Lab/images/Phishing_Triage/Alert_8817_Splunk.jpg)
-![Alert 8817 VirusTotal Malicious Flag](TryHackMe_Soc_Lab/images/Phishing_Triage/Alert_8817_VirusTotal.jpg)
+![Alert 8817 Email Lure](TryHackMe_Soc_Lab/images/Phishing_Alert_Triage_&_Incident_Response/Alert_8817.jpg)
+![Alert 8817 Splunk Allowed Traffic](TryHackMe_Soc_Lab/images/Phishing_Alert_Triage_&_Incident_Response/Alert_8817_Splunk.jpg)
+![Alert 8817 VirusTotal Malicious Flag](TryHackMe_Soc_Lab/images/Phishing_Alert_Triage_&_Incident_Response/Alert_8817_VirusTotal.jpg)
 
 ---
 
