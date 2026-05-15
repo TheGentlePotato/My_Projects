@@ -24,8 +24,16 @@ The SIEM flagged an email from `onboarding@hrconnex.thm`. While external domains
 * **Investigation:** I queried Splunk for internal IT communications.
 * **Findings:** Discovered an announcement confirming **HRConnex** as a new authorized partner.
 
-![Alert 8814 Email](TryHackMe_Soc_Lab%20/%20Pictures%20/Phishing_Alert_Triage_%26_Incident_Response/Alert_8814.jpg)
-![Alert 8814 Splunk Verification](TryHackMe_Soc_Lab%20/%20Pictures%20/Phishing_Alert_Triage_%26_Incident_Response/Alert_8814.jpg)
+<table width="100%">
+  <tr>
+    <td width="50%"><b>Email Lure</b></td>
+    <td width="50%"><b>Splunk Verification</b></td>
+  </tr>
+  <tr>
+    <td><img src="Pictures/Phishing_Alert_Triage_%26_Incident_Response/Alert_8814.jpg" width="100%"></td>
+    <td><img src="Pictures/Phishing_Alert_Triage_%26_Incident_Response/Alert_8814_Splunk.jpg" width="100%"></td>
+  </tr>
+</table>
 
 ---
 
@@ -35,19 +43,27 @@ The SIEM flagged an email from `onboarding@hrconnex.thm`. While external domains
 ### 🔍 Analysis & Evidence
 This case displayed a classic "Attack Chain." Alert 8815 caught the email delivery, while Alert 8816 caught the user actually clicking the malicious link.
 
-1.  **Delivery (8815):** A fake Amazon delivery notification using an urgent lure.
-2.  **Execution (8816):** The user searched for "payroll systems" and clicked a malicious `bit.ly` link (SEO Poisoning).
-3.  **Defense:** The corporate firewall successfully intercepted the request.
+1. **Delivery (8815):** A fake Amazon delivery notification using an urgent lure.
+2. **Execution (8816):** The user searched for "payroll systems" and clicked a malicious `bit.ly` link.
+3. **Defense:** The corporate firewall successfully intercepted the request.
 
-#### Phase 1: Email Delivery (8815)
-![Alert 8815 Email](TryHackMe_Soc_Lab/images/Phishing_Alert_Triage_&_Incident_Response/Alert_8815.jpg)
-![Alert 8815 Splunk Search](TryHackMe_Soc_Lab/images/Phishing_Alert_Triage_&_Incident_Response/Alert_8815_Splunk.jpg)
-![Alert 8815 VirusTotal Check](TryHackMe_Soc_Lab/images/Phishing_Alert_Triage_&_Incident_Response/Alert_8815_VirusTotal.jpg)
+#### Phase 1: Email Delivery (Alert 8815)
+<table width="100%">
+  <tr>
+    <td><img src="Pictures/Phishing_Alert_Triage_%26_Incident_Response/Alert_8815.jpg" width="100%"></td>
+    <td><img src="Pictures/Phishing_Alert_Triage_%26_Incident_Response/Alert_8815_Splunk.jpg" width="100%"></td>
+    <td><img src="Pictures/Phishing_Alert_Triage_%26_Incident_Response/Alert_8815_VirusTotal.jpg" width="100%"></td>
+  </tr>
+</table>
 
-#### Phase 2: User Interaction (8816)
-![Alert 8816 Web Alert](TryHackMe_Soc_Lab/images/Phishing_Alert_Triage_&_Incident_Response/Alert_8816.jpg)
-![Alert 8816 Splunk Traffic Log](TryHackMe_Soc_Lab/images/Phishing_Alert_Triage_&_Incident_Response/Alert_8816_Splunk.jpg)
-![Alert 8816 VirusTotal Result](TryHackMe_Soc_Lab/images/Phishing_Alert_Triage_&_Incident_Response/Alert_8816_VirusTotal.jpg)
+#### Phase 2: User Interaction (Alert 8816)
+<table width="100%">
+  <tr>
+    <td><img src="Pictures/Phishing_Alert_Triage_%26_Incident_Response/Alert_8816.jpg" width="100%"></td>
+    <td><img src="Pictures/Phishing_Alert_Triage_%26_Incident_Response/Alert_8816_Splunk.jpg" width="100%"></td>
+    <td><img src="Pictures/Phishing_Alert_Triage_%26_Incident_Response/Alert_8816_VirusTotal.jpg" width="100%"></td>
+  </tr>
+</table>
 
 ---
 
@@ -55,35 +71,32 @@ This case displayed a classic "Attack Chain." Alert 8815 caught the email delive
 **Verdict:** 🔥 True Positive (TP) - **CRITICAL**
 
 ### 🔍 Analysis & Evidence
-This was a high-severity incident. The attacker utilized **Typosquatting** (`m1crosoftsupport.co`) to trick the user into thinking the email was a security alert from Microsoft.
+The attacker utilized **Typosquatting** (`m1crosoftsupport.co`) to trick the user. The firewall action was **"ALLOWED,"** indicating a high probability of credential theft.
 
-* **The Gap:** Unlike the previous cases, the firewall action was **"ALLOWED."** * **Impact:** The user reached the malicious destination, indicating a high probability of credential theft.
-
-![Alert 8817 Email Lure](TryHackMe_Soc_Lab/images/Phishing_Alert_Triage_&_Incident_Response/Alert_8817.jpg)
-![Alert 8817 Splunk Allowed Traffic](TryHackMe_Soc_Lab/images/Phishing_Alert_Triage_&_Incident_Response/Alert_8817_Splunk.jpg)
-![Alert 8817 VirusTotal Malicious Flag](TryHackMe_Soc_Lab/images/Phishing_Alert_Triage_&_Incident_Response/Alert_8817_VirusTotal.jpg)
+<table width="100%">
+  <tr>
+    <td><img src="Pictures/Phishing_Alert_Triage_%26_Incident_Response/Alert_8817.jpg" width="100%"></td>
+    <td><img src="Pictures/Phishing_Alert_Triage_%26_Incident_Response/Alert_8817_Splunk.jpg" width="100%"></td>
+    <td><img src="Pictures/Phishing_Alert_Triage_%26_Incident_Response/Alert_8817_VirusTotal.jpg" width="100%"></td>
+  </tr>
+</table>
 
 ---
 
 ## 🎓 Technical Lessons Learned
 
 ### 1. SIEM Proficiency (Splunk)
-I learned that an alert is only a starting point. By using **Splunk**, I mastered:
-* **Pivoting:** Moving from a suspicious email address to searching for associated network traffic (IPs/URLs).
-* **Action Analysis:** Differentiating between "Blocked" (threat neutralized) and "Allowed" (active breach) logs.
+* **Log Correlation:** Mastered pivoting from a single Alert ID to broader traffic logs.
+* **Action Analysis:** Learned to identify "Allowed" vs "Blocked" logs to assess breach success.
 
-### 2. Threat Intelligence Integration (VirusTotal)
-I utilized **VirusTotal** to provide objective proof for my verdicts:
-* **Domain Reputation:** Identifying malicious shortened URLs and typosquatted domains.
-* **Community Consensus:** Leveraging vendor analysis to confirm phishing landing pages.
+### 2. Threat Intelligence (VirusTotal)
+* **Domain Reputation:** Used VT to identify typosquatted domains and shortened URLs.
+* **Consensus:** Leveraged community scores to verify malicious landing pages.
 
-### 3. Reporting & Classification
-I developed a standardized method for explaining results based on the verdict:
-
+### 3. Reporting Standards
 | Metric | False Positive (FP) | True Positive (TP) |
 | :--- | :--- | :--- |
-| **Primary Goal** | Minimize "Alert Fatigue" by identifying legitimate traffic. | Mitigate damage and identify the "Kill Chain" stage. |
-| **Documentation** | Focus on the business context (e.g., authorized partners). | Focus on IOCs (IPs/URLs) and remediation steps. |
-| **Action** | White-list or tune the alert rules. | Escalate for password resets and host isolation. |
+| **Focus** | Business context & validation. | Impact, Kill-Chain stage, & IOCs. |
+| **Action** | Alert tuning & whitelisting. | Escalation, Host isolation, & Reset. |
 
 ---
