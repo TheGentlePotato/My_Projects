@@ -1,5 +1,5 @@
 # 🛡️ SOC Investigation: Phishing & Incident Response Analysis
-**Analyst:** TheGentlePotato  
+**Analyst:** Pang Xing Thong (TheGentlePotato)  
 **Specialization:** Cybersecurity (Blue Team Operations)  
 **Lab Platform:** TryHackMe SOC Level 1  
 
